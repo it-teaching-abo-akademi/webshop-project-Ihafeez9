@@ -106,7 +106,7 @@ export const ShopPage = () => {
                     No item
                 </span> : <ItemCard itemsData={inputProp} sendActionToParent={handleActionFromItemCard} />}
                 {
-                    items.length > 9 && !query && <Box sx={{ height: '10vh', width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: 'background' }}>
+                    items?.length > 9 && !query && <Box sx={{ height: '10vh', width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: 'background' }}>
                         <Button sx={{ height: '5vh' }} onClick={fetchData} variant='outlined'>Load more</Button>
                     </Box>
                 }
